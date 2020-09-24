@@ -51,7 +51,8 @@ body {
 }
 
 .article-1 p,
-.article-2 p {
+.article-2 p,
+.article-3 p{
     text-align: justify;
 }
 
@@ -63,16 +64,6 @@ body {
 .image-sidebar img {
     box-shadow:0 2px 2px #333;
     width:100%;
-}
-
-.bottom-nav {
-    text-align:center;
-    margin:2rem 0;
-}
-
-.bottom-nav a {
-    padding:0 .25rem;
-    color:#191010;
 }
 
 .copyright a,
