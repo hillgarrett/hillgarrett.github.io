@@ -2,6 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+.page-header { grid-area: page-header; }
+.navigation-bar { grid-area: navigation-bar; }
+.content-left { grid-area: content-left; }
+.content-right { grid-area: content-right; }
+.footer { grid-area: footer; }
+
 html {
     font-size:14px;
     font-family:'Epilogue', sans-serif;
@@ -18,9 +24,9 @@ body {
 .grid-container {
     display: grid;
     grid-template-areas: 
-        'head head head head head head'
-        'nav content-left content-left content-left content-right content-right'
-        'nav footer footer footer footer footer';
+        'page-header page-header page-header page-header page-header page-header'
+        'navigation-bar content-left content-left content-left content-right content-right'
+        'navigation-bar footer footer footer footer footer';
     grid-gap: 2%;
     background-color: brown;
     padding: 2%;
@@ -33,14 +39,10 @@ body {
 }
 
 @media (min-width:600px) {
-
-
+}
 @media (min-width:800px) {
-
+}
 @media (min-width:1000px) {
-
-    }
-
+}
 @media (min-width:1300px) {
-
 }
