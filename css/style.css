@@ -37,6 +37,11 @@ body {
     padding: 2%;
     font-size: 14px;
 }
+.naviagtion-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 @media (min-width:600px) {
 }
