@@ -15,150 +15,32 @@ body {
     padding:2%;
 }
 
-.page-header {
-    display: inline;
-    flex-direction: column;
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        'head head head head head head'
+        'nav content-left content-left content-left content-right content-right'
+        'nav footer footer footer footer footer';
+    grid-gap: 2%;
+    background-color: brown;
+    padding: 2%;
 }
-.page-header h1 {
-    font-size:3rem;
-    margin-bottom:1rem;
-    text-transform: uppercase;
-    float: left;
-}
-.page-header img {
-    width:98%;
-    max-width: 200px;
-}
-
-.top-nav {
-    display:flex;
-    flex-direction: column;
-}
-
-.top-nav a {
-    font-size:1.5rem;
-    padding:.5rem 1rem;
-    margin-bottom:.5rem;
-    color:beige;
-    background-color:#563635;
-    text-decoration: none;
-    border-radius:.125rem;
-    box-shadow:0 2px 2px #333;
-}
-
-.article-head h2 {
-    margin-bottom:.5rem;
-}
-
-.article-1 p,
-.article-2 p,
-.article-3 p{
-    text-align: justify;
-}
-
-.image-sidebar figure {
-    margin:.5rem auto;
-    width:98%;
-}
-
-.image-sidebar img {
-    box-shadow:0 2px 2px #333;
-    width:100%;
-}
-
-.reference a {
-    color:purple;
-}
-
-@media (min-width:500px) {
-    
-    .page-header h1 {
-        font-size:3rem;
-    }
-    
-    .top-nav {
-        flex-direction:row;
-    }
-    
-    .top-nav a {
-        padding:.5rem 1rem;
-        margin-right:1.5%;
-    }
+.grid-container > div {
+    background-color: brown;
+    text-align: left;
+    padding: 2%;
+    font-size: 14px;
 }
 
 @media (min-width:600px) {
-   .page-header h1 {  
-      font-size:4rem;
-    }
-    
-    .top-nav {
-        margin:1rem 0 2.5rem 0;
-    }
-    
-}
+
 
 @media (min-width:800px) {
-    .page-header h1 {  
-      font-size:4rem;
-    }
-    
-    .image-sidebar {
-        display:flex;
-        flex-direction: row;
-    }
-    
-    .image-sidebar figure {
-        width:25%;
-    }
-}
 
 @media (min-width:1000px) {
-    .page-header h1 {  
-      font-size:4rem;
-    }
-    
-    .top-nav {
-        justify-content: space-between;
-    }
-    .section-1 {
-        display:flex;
-        flex-direction: row;        
-    }
-    
-    .article-1 {
-        width:32%;
-        padding-right:1%;
-    }
 
-    .article-2 {
-        width:32%;
-        padding-left:1%;
     }
-    
-    .article-3 {
-        width:32%;
-        padding-left:1%;
-    }
-    
-}
-
 
 @media (min-width:1300px) {
-   
-    html {
-         background-color: bisque;
-    }
-    
-    body {
-        margin:1rem auto;
-        max-width:1200px;
-        border:1px solid black;
-        box-shadow:2px 2px 5px #333;
-        background-color: beige;
-    }
-    
-    .page-header h1 {  
-        font-size:4.5rem;
-        margin-top:0;
-    }
+
 }
