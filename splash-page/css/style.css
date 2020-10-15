@@ -28,7 +28,6 @@ body {
 
 .page-header img {
     width:var(--default-width);
-    
     max-width: 30px;
     margin:0 .5%;
     filter: grayscale(100%);
