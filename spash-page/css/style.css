@@ -1,0 +1,108 @@
+
+:root {
+    /* #567; */
+    font-size:18px;
+    --main-color:rgb(255, 221, 226);
+    --hover-color:rgb(255, 221, 226, .7);
+    --main-bg-color:rgb(123, 123, 123);
+    --top-position:30%;
+    --default-width:100%;
+}
+body {
+    background-color:var(--main-bg-color);
+    color:var(--main-color); 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.page-header {
+    text-align: center;
+    padding:3%;
+}
+
+.page-header a {
+    text-decoration: none;
+}
+
+.page-header img {
+    width:var(--default-width);
+    
+    max-width: 30px;
+    margin:0 .5%;
+    filter: grayscale(100%);
+}
+.content {
+    text-align: center;
+    width:var(--default-width);
+    background-image:url(https://i.picsum.photos/id/1021/2048/1206.jpg?hmac=fqT2NWHx783Pily1V_39ug_GFH1A4GlbmOMu8NWB3Ts);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    padding:10rem 0;
+    clip-path: polygon(
+        25% 0%,
+        75% 0%,
+        100% 50%, 
+        50% 100%, 
+        0% 50%);
+    top:calc(var(--top-position) - 25%);
+    max-height: 100%
+}
+.page-text h1{
+    margin-bottom: 0;
+}
+
+.page-text h1 a {
+    font-size: 4rem;
+    text-decoration: none;
+    color:var(--main-color);
+}
+.page-text h1 a:hover {
+    color:var(--hover-color);
+}
+@media (min-width:800px) {
+    .page-header {
+        text-align: left;
+    }
+    .content {
+        clip-path: none;
+    }
+    .page-text h1{
+        font-size: 4rem;
+    }
+}
+
+@media (min-width:1000px) {
+    .page-header img {
+        max-width: 45px;
+    }
+    .page-text h1{
+        font-size: 6rem;
+    }
+}
+
+@media (min-width:1200px) {
+    .content {
+        clip-path:none;
+    }
+    .page-text h1{
+        font-size: 8rem;
+}
+
+}
+/* 
+
+Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+
+Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+
+Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+
+*/
+
+/*
+    background-color:rgba(255, 255, 255, 0.5)
+    
+*/
