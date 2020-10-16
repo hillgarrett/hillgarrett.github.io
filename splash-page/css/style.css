@@ -1,25 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@300&display=swap');
 
 :root {
-    /* #567; */
     font-size:18px;
+    --font-1:'Sansita Swashed', cursive;
+    --font-2:'Commissioner', sans-serif;
     --main-color:rgb(255, 221, 226);
     --hover-color:rgb(255, 221, 226, .7);
     --main-bg-color:rgb(123, 123, 123);
-    --top-position:30%;
+    --position:15%;
     --default-width:100%;
 }
 body {
+    font-family:var(--font-1);
     background-color:var(--main-bg-color);
     color:var(--main-color); 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 .page-header {
     text-align: center;
-    padding:3%;
+    padding: 1%;
 }
 
 .page-header a {
@@ -46,7 +49,8 @@ body {
         100% 50%, 
         50% 100%, 
         0% 50%);
-    top:calc(var(--top-position) - 25%);
+    top:calc(var(--position) + 5%);
+    bottom:calc(var(--position) + 5%);
     max-height: 100%
 }
 .page-text h1{
@@ -61,13 +65,22 @@ body {
 .page-text h1 a:hover {
     color:var(--hover-color);
 }
+
+.link-text:nth-child(2) {
+    font-family:var(--font-2);
+}
 @media (min-width:800px) {
     .page-header {
         text-align: left;
     }
     .content {
-        clip-path: none;
-    }
+        clip-path: polygon(
+            0% 0%,
+            100% 0%,
+            100% 50%, 
+            50% 100%, 
+            0% 50%);
+        }
     .page-text h1{
         font-size: 4rem;
     }
