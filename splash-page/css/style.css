@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@300&display=swap');
 
 :root {
-    font-size:18px;
+    --font-size:55px;
     --font-1:'Sansita Swashed', cursive;
     --font-2:'Commissioner', sans-serif;
     --main-color:rgb(255, 221, 226);
@@ -36,6 +36,7 @@ body {
     filter: grayscale(100%);
 }
 .content {
+    font-size:var(--font-size);
     text-align: center;
     width:var(--default-width);
     background-image:url(https://i.picsum.photos/id/1021/2048/1206.jpg?hmac=fqT2NWHx783Pily1V_39ug_GFH1A4GlbmOMu8NWB3Ts);
@@ -49,15 +50,13 @@ body {
         100% 50%, 
         50% 100%, 
         0% 50%);
-    top:calc(var(--position) + 5%);
-    max-height: 100%
 }
 .page-text h1{
     margin-top: 0;
 }
 
 .page-text h1 a {
-    font-size: 4rem;
+    font-size:var(--font-size);
     text-decoration: none;
     color:var(--main-color);
 }
@@ -80,31 +79,32 @@ body {
             50% 100%, 
             0% 50%);
         }
-    .page-text h1{
-        font-size: 4rem;
+    .page-text h1 a {
+        font-size:calc(var(--font-size) x 2);
     }
 }
 
 @media (min-width:1000px) {
-    .content {
-        position: absolute;
-        top:calc(var(--position) + 5%);
-    }
     .page-header img {
         max-width: 45px;
     }
-    .page-text h1{
-        font-size: 6rem;
+    .page-text h1 a {
+        font-size:calc(var(--font-size) x 3);
     }
     .page-text h1{
-    margin-top: 0;
-    margin-bottom: 10rem;
+        margin-top: 0;
+        margin-bottom: 10rem;
     }
 }
 
 @media (min-width:1200px) {
     .content {
+        position: absolute;
+        top:0;
         clip-path:none;
+    }
+    .page-text h1 a {
+        font-size:calc(var(--font-size) x 5);
     }
     .page-text h1{
         font-size: 8rem;
