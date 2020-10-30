@@ -80,7 +80,7 @@ body {
 .svg-logo img {
     display: block;
     margin: 0;
-    max-width: 1080px;
+    max-width: 1200px;
     width:50%;
 }
 
@@ -128,8 +128,8 @@ body {
 
 .gallery-item:hover .overlay,
 .gallery-item:active .overlay {
-  opacity:.9;
     transition:.75s ease;
+    opacity:.9;
 }
 
 .page-footer {
