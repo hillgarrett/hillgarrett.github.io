@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@300&display=swap');
+
+:root {
+    --font-size:55px;
+    --form-size:25px;
+    --font-1:'Sansita Swashed', cursive;
+    --font-2:'Commissioner', sans-serif;
+    --main-color:rgb(255, 221, 226);
+    --second-color:rgb(234, 218, 226);
+    --main-bg-color:rgb(123, 123, 123);
+    --position:15%;
+    --default-width:100%;
+}
+.page-text { grid-area: page-text; }
+.contact-form { grid-area: contact-form; }
+
+body {
+    font-family:var(--font-1);
+    background-color:var(--main-bg-color);
+    color:var(--main-color); 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page-header {
+    margin-top: 0;
+    text-align: center;
+    padding: 1%;
+    padding-bottom: 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color:var(--main-color);
+}
+
+.page-header a {
+    text-decoration: none;
+}
+
+.social-icons {
+    margin: 0;
+    padding: 0;
+}
+.top-search {
+    max-width:400px;
+}
+.search-bar {
+    font-family: var(--font-2);
+    font-size: var(--form-size);
+    color: black;
+    text-align: center;
+    outline: none;
+    border-radius: 3px;
+}
+
+.search-box {
+    text-align: center;
+}
+
+.page-header img {
+    width:var(--default-width);
+    max-width: 30px;
+}
+
+.sign-in {
+
+}
+
+.sign-in a {
+    font-family:var(--font-2);
+    color: darkslategrey;
+    font-size:20px;
+    text-decoration: none;
+}
+.wrapper {
+    font-size:var(--font-size);
+    text-align: center;
+    width:var(--default-width);
+    background-image:url(https://i.picsum.photos/id/1021/2048/1206.jpg?hmac=fqT2NWHx783Pily1V_39ug_GFH1A4GlbmOMu8NWB3Ts);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    padding-top: 2rem;
+    padding-bottom: 10rem;
+    display:grid;
+    grid-template-areas: 
+        'page-text'
+        'contact-form';
+    grid-gap: 2%;
+    clip-path: polygon(
+          0% 0%,
+          100% 0%,
+          100% 90%, 
+          50% 100%, 
+          0% 90%);
+}
+.svg-logo {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.svg-logo img {
+    display: block;
+    margin: 0;
+    max-width: 1200px;
+    width:30%;
+}
+
+.input-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form {
+    font-family: var(--font-2);
+    font-size: var(--form-size);
+    color: black;
+    text-align: left;
+    max-width:450px;
+    width: 100%;
+    border-radius: 8px;
+    background-color:var(--main-color);
+    padding: 1rem;
+}
+
+label {
+    display: inline-block;
+    float: left;
+    clear: left;
+    font-family: var(--font-2);
+    font-size: 18px;
+    color: black;
+    text-align: left;
+    width: 100%;
+    border-radius: 8px;
+    background-color:var(--main-color);
+}
+
+fieldset {
+    border: none;
+}
+
+input {
+    display: inline-block;
+    float: left;
+}
+
+.comments {
+    align-items: left;
+}
+.comments-input {
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.privacy-form {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.privacy a {
+    text-decoration: underline;
+    color: darkslategray;
+}
+
+.checkbox-sizing {
+    margin: 1rem;
+    cursor: pointer;
+    transform : scale(2);
+}
+
+.submit-reset {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.reset,
+.submit {
+    transform: scale(.8);
+    float:left;
+    padding: 1rem 1.25rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 
+}
+
+.reset {
+    background-color: darkslategray;
+    float:left;
+    margin-right: 4rem;
+    color: white;
+}
+
+.submit {
+    background-color: darkgray;
+    
+    
+}
+.page-footer {
+    position:relative;
+    bottom:0;
+    right:0;
+    text-align: center;
+    padding: 1%;
+    margin:0;
+}
+
+.footer-nav {
+    text-align: center;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    font-family: var(--font-1);
+    color: var(--main-color);
+    font-size:30px;
+    margin:0 .5%;
+}
+
+.cc-info {
+    font-family: var(--font-2);
+    color: var(--second-color);
+    text-align: center;
+    margin-top:.25rem;
+    margin-bottom:0;
+}
+
+.cc-info a {
+    color: var(--second-color);
+    text-decoration: none;
+}
+
+@media (min-width:800px) {
+    .search {
+        text-align: center;
+    }
+    .page-header {
+        text-align: left;
+    }
+    .sign-in {
+        text-align: right;
+    }
+    .wrapper {
+        clip-path: polygon(
+            0% 0%,
+            100% 0%,
+            100% 90%, 
+            50% 100%, 
+            0% 90%);
+        }
+    .gallery {
+        flex-direction: row;
+    }
+}
+
+@media (min-width:1000px) {
+    .page-header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .page-header img {
+        max-width: 45px;
+    }
+    .search-bar {
+        padding-right: 9%;
+    }
+    .sign-in {
+        float:right;
+    }
+    .sign-in {
+        font-size: 30px;
+    }
+    
+    .contact-form {
+        max-width:600px;
+    }
+    label {
+        font-size: var(--form-size);
+    }
+    .first-name,
+    .last-name,
+    .email {
+        display: flex;
+        align-content: center;
+        vertical-align: middle;
+    }
+    .footer-nav a {
+        font-size: 45px;
+    }
+    
+}
+
+@media (min-width:1200px) {
+    .wrapper {
+        top:0;
+        clip-path:none;
+    }
+}
+/* 
+
+Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+
+Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+
+Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+
+
+*/
+
+/*
+background image found from https://i.picsum.photos/id/1021/2048/1206.jpg?hmac=fqT2NWHx783Pily1V_39ug_GFH1A4GlbmOMu8NWB3Ts
+*/
